@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Role Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (role of roleList; track $index) {
+                    <tr>
+                        <td>{{role.roleId}}</td>
+                        <td>{{role.role}}</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

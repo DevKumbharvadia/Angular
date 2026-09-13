@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a href="javascript:void(0)" class="navbar-brand">Logo</a>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/master" routerLinkActive="active">Master</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/employee" routerLinkActive="active">Employee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/client" routerLinkActive="active">Client</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/client-project" routerLinkActive="active">Client Project</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-primary" type="button" (click)="onLogOff()">logOff</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="container pt-1">
+    <router-outlet></router-outlet>
+</div>
